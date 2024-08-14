@@ -13,7 +13,7 @@ import { vegetables,fruits } from "../fruitandvegdetail";
 
 const Home = () => {
   const toggle = useSelector((state) => state.product);
-  const shareUrl = "https://mystartup.onrender.com/"
+  const shareUrl = "https://injinear.onrender.com/"
   
   return (
     <div>
