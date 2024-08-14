@@ -134,7 +134,7 @@ export const vegetables = [
     {
         id: 11,
         title: "Radish Red",
-        titleTamil: "வெள்ளை முள்ளங்கி",
+        titleTamil: "சிவப்பு முள்ளங்கி",
         weight: 1,
         regularPrice: 26,
         offerPrice: 25,
