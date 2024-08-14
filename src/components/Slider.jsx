@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-import welcome from '../assets/welcome.png'
-import welcomeTamil from '../assets/welcometamil.png'
-import agency from '../assets/agency.png'
-import agencyTamil from '../assets/agencytamil.png'
-import bulkorders from '../assets/bulkorders.png'
-import bulkTamil from '../assets/bulktamil.png'
-import goatSale from '../assets/goatsale.png'
-import ad from '../assets/ad.png'
-import adTamil from '../assets/adtamil.png'
+import slider1 from '../assets/slider/slider1.png'
+import slider2 from '../assets/slider/slider2.png'
+import slider3 from '../assets/slider/slider3.png'
 import { useSelector } from 'react-redux';
 
 
@@ -20,28 +14,18 @@ const Slider = () => {
     const slider = [
       {
         id: 1,
-        image: welcome,
-        imageTamil:welcomeTamil
+        image: slider1,
+     
       },
       {
         id: 2,
-        image: bulkorders,
-        imageTamil:bulkTamil
+        image: slider2,
+      
       },
       {
         id: 3,
-        image: goatSale,
-        imageTamil:null
-      },
-      {
-        id: 4,
-        image: agency,
-        imageTamil:agencyTamil
-      },
-      {
-        id: 5,
-        image: ad,
-        imageTamil:adTamil
+        image: slider3,
+  
       },
     ];
   

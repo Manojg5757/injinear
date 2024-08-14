@@ -1,0 +1,247 @@
+import beetroot from './assets/vegetables/beetroot.jpg'
+import bigOnion from './assets/vegetables/bigOnion.jpg'
+import brinjal from './assets/vegetables/brinjal.jpg'
+import cabbage from './assets/vegetables/cabbage.jpg'
+import carrot from './assets/vegetables/carrot.jpg'
+import cauliflower from './assets/vegetables/cauliflower.jpg'
+import greenChilli from './assets/vegetables/greenChilli.jpg'
+import lemon from './assets/vegetables/lemon.jpg'
+import potato from './assets/vegetables/potato.jpg'
+import radishred from './assets/vegetables/radishred.jpg'
+import radishwhite from './assets/vegetables/radishwhite.jpg'
+import tomato from './assets/vegetables/tomato.jpg'
+
+import apple from './assets/fruits/apple.jpg'
+import grapes from './assets/fruits/grapes.jpg'
+import greengrapes from './assets/fruits/greengrapes.jpg'
+import orange from './assets/fruits/orange.jpg'
+import pineapple from './assets/fruits/pineapple.jpg'
+import pomengranate from './assets/fruits/pomengranate.jpg'
+import watermelon from './assets/fruits/watermelon.jpg'
+
+
+export const vegetables = [
+    {
+        id: 1,
+        title: "Beetroot",
+        titleTamil: "பீட்ரூட்",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "vegetables",
+        image: beetroot,
+        weightType: "kg",
+    },
+    {
+        id: 2,
+        title: "Big Onion",
+        titleTamil: "பெரிய வெங்காயம்",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "vegetables",
+        image: bigOnion,
+        weightType: "kg",
+    },
+    {
+        id: 3,
+        title: "Brinjal",
+        titleTamil: "கத்தரிக்காய்",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "vegetables",
+        image: brinjal,
+        weightType: "kg",
+    },
+    {
+        id: 4,
+        title: "Cabbage",
+        titleTamil: "முட்டைக்கோஸ்",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "vegetables",
+        image: cabbage,
+        weightType: "kg",
+    },
+    {
+        id: 5,
+        title: "Cabbage",
+        titleTamil: "முட்டைக்கோஸ்",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "vegetables",
+        image: cabbage,
+        weightType: "kg",
+    },
+    {
+        id: 6,
+        title: "Carrot",
+        titleTamil: "கேரட்",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "vegetables",
+        image: carrot,
+        weightType: "kg",
+    },
+    {
+        id: 7,
+        title: "Cauliflower",
+        titleTamil: "காலிபிளவர்",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "vegetables",
+        image: cauliflower,
+        weightType: "kg",
+    },
+    {
+        id: 8,
+        title: "Green Chilli",
+        titleTamil: "பச்சை மிளகாய்",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "vegetables",
+        image: greenChilli,
+        weightType: "kg",
+    },
+    {
+        id: 9,
+        title: "Lemon",
+        titleTamil: "எலுமிச்சை",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "vegetables",
+        image: lemon,
+        weightType: "kg",
+    },
+    {
+        id: 10,
+        title: "Potato",
+        titleTamil: "உருளை கிழங்கு",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "vegetables",
+        image: potato,
+        weightType: "kg",
+    },
+    {
+        id: 11,
+        title: "Radish Red",
+        titleTamil: "வெள்ளை முள்ளங்கி",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "vegetables",
+        image: radishred,
+        weightType: "kg",
+    },
+    {
+        id: 12,
+        title: "Radish White",
+        titleTamil: "முள்ளங்கி",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "vegetables",
+        image: radishwhite,
+        weightType: "kg",
+    },
+    {
+        id: 13,
+        title: "Tomato",
+        titleTamil: "தக்காளி",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "vegetables",
+        image: tomato,
+        weightType: "kg",
+    }
+]
+
+export const fruits = [
+    {
+        id: 1,
+        title: "Apple",
+        titleTamil: "ஆப்பிள்",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "fruits",
+        image: apple,
+        weightType: "kg",
+    },
+    {
+        id: 2,
+        title: "grapes",
+        titleTamil: "கருப்பு திராட்சை",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "fruits",
+        image: grapes,
+        weightType: "kg",
+    },
+    {
+        id: 3,
+        title: "Green grapes",
+        titleTamil: "பச்சை திராட்சை",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "fruits",
+        image: greengrapes,
+        weightType: "kg",
+    },
+    {
+        id: 4,
+        title: "Orange",
+        titleTamil: "ஆரஞ்சு",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "fruits",
+        image: orange,
+        weightType: "kg",
+    },
+    {
+        id: 5,
+        title: "PineApple",
+        titleTamil: "அன்னாசிப்பழம்",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "fruits",
+        image: pineapple,
+        weightType: "kg",
+    },
+    {
+        id: 6,
+        title: "Pomengranate",
+        titleTamil: "மாதுளை",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "fruits",
+        image: pomengranate,
+        weightType: "kg",
+    },
+    {
+        id: 7,
+        title: "Watermelon",
+        titleTamil: "தர்பூசணி",
+        weight: 1,
+        regularPrice: 26,
+        offerPrice: 25,
+        category: "fruits",
+        image: watermelon,
+        weightType: "kg",
+    },
+]

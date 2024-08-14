@@ -1,6 +1,5 @@
 import React from "react";
 import grocery from "../assets/grocery.png";
-import fruits from "../assets/fruits.png";
 import sprite from "../assets/sprite.png";
 import stationary from "../assets/stationary.png";
 import rice from "../assets/rice.png";
@@ -9,6 +8,7 @@ import sliderDetails, { essentialOffers, masalaOffer, soapOffer } from "../detai
 import { useSelector } from "react-redux";
 import videoad from '../assets/videoad.mp4'
 import { WhatsappShareButton,WhatsappIcon, FacebookShareButton, FacebookIcon, InstapaperShareButton, InstapaperIcon } from 'react-share'
+import { vegetables,fruits } from "../fruitandvegdetail";
 
 
 const Home = () => {
@@ -36,11 +36,11 @@ const Home = () => {
         </FacebookShareButton>
         </div>
         </div>
-         <h1 className="text-center mb-4 text-lg font-semibold text-blue-600">{toggle ? "Best Deals for You" : "சிறந்த சலுகைகள்"}</h1>
+         <h1 className="text-center mt-4 mb-4 text-lg font-semibold text-logoGreen">{toggle ? "Best Deals for You" : "சிறந்த சலுகைகள்"}</h1>
          <h1 className="my-4 font-semibold">{toggle ? "Kitchen Essentials" : "சமையல் அறை"}</h1>
         <div className="flex flex-wrap gap-2 justify-center">
           
-          {essentialOffers.map((product) => {
+          {vegetables.map((product) => {
             return (
               <div key={product.id} className="shadow-lg rounded-lg overflow-hidden sm:p-3">
                 <img
@@ -81,7 +81,7 @@ const Home = () => {
         <h1 className="my-7 font-semibold">{toggle ? "Masala Section" : "மசாலா வகைகள்"}</h1>
         <div className="flex flex-wrap gap-2 justify-center">
           
-          {masalaOffer.map((product) => {
+          {fruits.map((product) => {
             return (
               <div key={product.id} className="shadow-lg rounded-lg overflow-hidden sm:p-3">
                 <img
@@ -98,8 +98,8 @@ const Home = () => {
                     {product.offerPrice ? (
                       <div className="flex gap-2 items-center">
                         <p className="text-sm">
-                          mrp:
-                          <span className=" line-through">₹{product.mrp}</span>
+                          
+                          <span className=" line-through">₹{product.regularPrice}</span>
                         </p>
                         <p className="bg-green-400 rounded-2xl text-[12px] w-fit px-3 py-1">
                           {product.weight} {product.weightType === 'gram' ? (toggle ? "gram" : "கிராம்") : product.weightType === 'kg' ? (toggle ? "Kg" :"கிலோ" ) : (toggle ? "Piece" : "ஒன்று")} ₹{product.offerPrice}
@@ -119,7 +119,7 @@ const Home = () => {
           })}
         </div>
         
-        <h1 className="my-4 font-semibold">{toggle ? "Soap and Detergent" : "சோப்பு மற்றும் டிடர்ஜென்ட்" }</h1>
+        {/* <h1 className="my-4 font-semibold">{toggle ? "Soap and Detergent" : "சோப்பு மற்றும் டிடர்ஜென்ட்" }</h1>
         <div className="flex flex-wrap gap-2  justify-center">
           {soapOffer.map((product) => {
             return (
@@ -157,7 +157,7 @@ const Home = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </div>
   );

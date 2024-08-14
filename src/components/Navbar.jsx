@@ -33,25 +33,25 @@ const Navbar = () => {
         <Link to="/">
           <img
             src={logo}
-            className="h-[50px] w-[200px] border-2 border-blue-300"
+            className="h-[30px] sm:h-[50px]"
             alt=""
           />
         </Link>
         <div className="absolute sm:relative top-0 right-0">
-          <div className="relative bg-gradient-to-r from-indigo-400 to-blue-500 px-2 py-1 sm:px-3 sm:py-2 rounded-2xl">
+          <div className="relative bg-logoGreen px-2 py-1 sm:px-3 sm:py-2 rounded-2xl">
             <p className="text-[10px] relative z-50 sm:text-xl  text-white ">
               {languageTitle ? "Launching offer" : "திறப்பு விழா சலுகை"}
             </p>
-            <motion.div className=" absolute z-20 h-[30px] w-[30px] sm:h-[50px] sm:w-[50px] top-0 -left-2" initial={{rotateY:0}} animate={{rotateY:360}} transition={{ duration: 2, repeat: Infinity, repeatType: 'loop' }}>
-            <img  src={navOffer} alt="" />
+            <motion.div className=" absolute z-20 h-[30px] w-[30px] sm:h-[50px] sm:w-[50px] top-0 -left-5" initial={{rotateY:0}} animate={{rotateY:360}} transition={{ duration: 10, repeat: Infinity, repeatType: 'loop' }}>
+            <img className="sm:h-[60px]"  src={navOffer} alt="" />
             </motion.div>
           </div>
         </div>
         <ul className="flex gap-4">
-          <li>
+          <li className="font-bold text-logoGreen invisible sm:text-lg">
             <Link to="/store">{languageTitle ? "Store" : "கடை"}</Link>
           </li>
-          <li>
+          <li className="font-bold text-logoGreen sm:text-lg">
             <Link to="/offer">{languageTitle ? "Drop" : "டிராப்"}</Link>
           </li>
           <li className="cursor-pointer" onClick={handleLangToggle}>
